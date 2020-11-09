@@ -1,0 +1,16 @@
+export const SET_ALERT = 'SET_ALERT';
+export const REMOVE_ALERT = 'REMOVE_ALERT';
+export const ADMIN_LOADED = 'ADMIN_LOADED';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT = 'LOGOUT';
+export const SEND_LETTER = 'SEND_LETTER';
+export const GET_LETTERS = 'GET_LETTERS';
+export const DELETE_LETTER = 'DELETE_LETTER';
+export const POST_ERROR = 'POST_ERROR';
+export const CREATE_ARTICLE = 'CREATE_ARTICLE';
+export const GET_ARTICLES = 'GET_ARTICLES';
+export const GET_RANDOM_ARTICLES = 'GET_RANDOM_ARTICLES';
+export const GET_ARTICLE = 'GET_ARTICLE';
+export const DELETE_ARTICLE = 'DELETE_ARTICLE';
