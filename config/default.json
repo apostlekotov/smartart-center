@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb://localhost/smart",
+  "secret": "ananas in the bottle"
+}
