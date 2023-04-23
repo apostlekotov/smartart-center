@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const config = require('config');
 const { check, validationResult } = require('express-validator');
 
 const Admin = require('../../models/Admin');
@@ -20,7 +19,7 @@ router.post(
     check('password', 'Введіть пароль не менше 6 символів').isLength({
       min: 6
     }),
-    check('secret', 'Неправильна відповідь').equals(config.get('secret'))
+    check('secret', 'Неправильна відповідь').equals(process.env.SECRET)
   ],
   async (req, res) => {
     const errors = validationResult(req);
@@ -56,7 +55,7 @@ router.post(
 
       jwt.sign(
         payload,
-        config.get('secret'),
+        process.env.SECRET,
         { expiresIn: 360000 },
         (err, token) => {
           if (err) throw err;
