@@ -1,6 +1,8 @@
 # SmartArt Center
 
-> MERN App for the private kindergarten - [smartart.center](https://smartart.center) (currently not available)
+> Cooperative website with blog for the private kindergarten - [smartart-center.onrender.com](https://smartart-center.onrender.com)
+
+![smartart-center](https://raw.githubusercontent.com/apostlekotov/kotovts/main/public/img/projects/smartart.png)
 
 ## Set up (Web App)
 
@@ -19,7 +21,7 @@ react-scripts build # build React app
 cd ..
 ```
 
-**Important!** Make sure you fill the [config file](config/default.json)!
+**Important!** Make sure you fill the [config file](.env)!
 
 And run the app:
 
@@ -29,6 +31,6 @@ yarn dev
 
 ### Author
 
-- **Kotov** (kotov.smtp@gmail.com)
+Paul Kotov (paul@kotov.com.ua)
 
-Made with love <3
+Made with love ❤️
